@@ -1,1 +1,1 @@
-# CSharp-7-and-NET-Core-2.0-Blueprints
+# CSharp-7-and-.NET-Core-2.0-Blueprints
