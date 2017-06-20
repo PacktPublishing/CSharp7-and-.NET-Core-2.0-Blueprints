@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.Xml;
 using static eBookManager.Helper.ExtensionMethods;
 using static System.Math;
-
+ 
 
 namespace eBookManager
 {
@@ -157,7 +157,7 @@ namespace eBookManager
         }
 
 
-        // C#7 - Expression-Bodied Property
+        // C#7 - Expression-Bodied Property.
         private HashSet<string> AllowedExtensions => new HashSet<string>(StringComparer.InvariantCultureIgnoreCase) { ".doc", ".docx", ".pdf", ".epub" };
 
         private enum Extention { doc = 0, docx = 1, pdf = 2, epub = 3 }
