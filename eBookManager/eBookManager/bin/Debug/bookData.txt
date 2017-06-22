@@ -1,0 +1,70 @@
+[
+  {
+    "ID": 0,
+    "Name": "Cookbooks",
+    "Description": null,
+    "BookList": [
+      {
+        "Title": "C# Cookbook",
+        "FileName": "Cookbook 1.epub",
+        "Extension": ".epub",
+        "LastAccessed": "2017-06-20T23:23:26.5157688+02:00",
+        "Created": "2017-06-20T23:23:26.5157688+02:00",
+        "FilePath": "C:\\temp\\[]myebooks\\Cookbook 1.epub",
+        "FileSize": "5,63 MB",
+        "ISBN": "5af34534",
+        "Price": 0.0,
+        "Publisher": "Packt Publishing",
+        "Author": "Dirk Strauss",
+        "PublishDate": "2016-06-14T01:08:37",
+        "Classification": null,
+        "Category": "C# 6"
+      }
+    ]
+  },
+  {
+    "ID": 1,
+    "Name": "iOS Development",
+    "Description": null,
+    "BookList": null
+  },
+  {
+    "ID": 2,
+    "Name": ".NET Core",
+    "Description": "All books relating to the new .NET Core",
+    "BookList": [
+      {
+        "Title": "ASP.NET Core Unleashed",
+        "FileName": "ASP.NET 5.pdf",
+        "Extension": ".pdf",
+        "LastAccessed": "2017-06-20T23:23:27.5428872+02:00",
+        "Created": "2017-06-20T23:23:27.5428872+02:00",
+        "FilePath": "C:\\temp\\[]myebooks\\ASP.NET 5.pdf",
+        "FileSize": "8,57 MB",
+        "ISBN": "3451453451",
+        "Price": 0.0,
+        "Publisher": "Packt Publishing",
+        "Author": "Mike Wyzowski",
+        "PublishDate": "2017-02-01T01:08:37",
+        "Classification": null,
+        "Category": ".NET Core 2"
+      },
+      {
+        "Title": "ASP.NET Core Succicintly",
+        "FileName": "ASP.NET 2.epub",
+        "Extension": ".epub",
+        "LastAccessed": "2017-06-20T23:23:27.0944025+02:00",
+        "Created": "2017-06-20T23:23:27.0944025+02:00",
+        "FilePath": "C:\\temp\\[]myebooks\\ASP.NET 2.epub",
+        "FileSize": "7,18 MB",
+        "ISBN": "56735673563",
+        "Price": 0.0,
+        "Publisher": "Syncfusion",
+        "Author": "John Marks",
+        "PublishDate": "2017-01-03T01:08:37",
+        "Classification": null,
+        "Category": ".NET Core 2"
+      }
+    ]
+  }
+]

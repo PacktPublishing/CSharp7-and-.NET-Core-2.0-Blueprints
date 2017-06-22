@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBookManager", "eBookManager\eBookManager.csproj", "{36FEDD28-2B83-453B-A6CB-98CD533BC630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBookManager.Engine", "eBookManager.Engine\eBookManager.Engine.csproj", "{155B2087-3C52-4398-AE80-72CC6041D547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBookManager.Helper", "eBookManager.Helper\eBookManager.Helper.csproj", "{F0B5225A-8B8B-446E-AC56-3D9F65398DAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0AC42B8B-CC29-4E31-8BC2-630E53FE3705}"
+	ProjectSection(SolutionItems) = preProject
+		readme.txt = readme.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36FEDD28-2B83-453B-A6CB-98CD533BC630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36FEDD28-2B83-453B-A6CB-98CD533BC630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36FEDD28-2B83-453B-A6CB-98CD533BC630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36FEDD28-2B83-453B-A6CB-98CD533BC630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{155B2087-3C52-4398-AE80-72CC6041D547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155B2087-3C52-4398-AE80-72CC6041D547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155B2087-3C52-4398-AE80-72CC6041D547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155B2087-3C52-4398-AE80-72CC6041D547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0B5225A-8B8B-446E-AC56-3D9F65398DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B5225A-8B8B-446E-AC56-3D9F65398DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0B5225A-8B8B-446E-AC56-3D9F65398DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0B5225A-8B8B-446E-AC56-3D9F65398DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

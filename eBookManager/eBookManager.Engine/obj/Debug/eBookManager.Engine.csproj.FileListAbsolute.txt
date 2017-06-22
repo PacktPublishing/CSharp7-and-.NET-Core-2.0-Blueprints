@@ -1,0 +1,16 @@
+C:\z\sourcecode\.NET Core Blueprints\eBook Manager and Catalog\eBookManager.Engine\bin\Debug\eBookManager.Engine.dll
+C:\z\sourcecode\.NET Core Blueprints\eBook Manager and Catalog\eBookManager.Engine\bin\Debug\eBookManager.Engine.pdb
+C:\z\sourcecode\.NET Core Blueprints\eBook Manager and Catalog\eBookManager.Engine\obj\Debug\eBookManager.Engine.csprojResolveAssemblyReference.cache
+C:\z\sourcecode\.NET Core Blueprints\eBook Manager and Catalog\eBookManager.Engine\obj\Debug\eBookManager.Engine.dll
+C:\z\sourcecode\.NET Core Blueprints\eBook Manager and Catalog\eBookManager.Engine\obj\Debug\eBookManager.Engine.pdb
+C:\z\sourcecode\.NET Core Blueprints\eBook Manager and Catalog\eBookManager.Engine\bin\Debug\System.ValueTuple.dll
+C:\z\sourcecode\.NET Core Blueprints\eBook Manager and Catalog\eBookManager.Engine\bin\Debug\Newtonsoft.Json.dll
+C:\z\sourcecode\.NET Core Blueprints\eBook Manager and Catalog\eBookManager.Engine\bin\Debug\Newtonsoft.Json.xml
+C:\z\sourcecode\.NET Core Blueprints\[]backup\eBook Manager and Catalog\eBookManager.Engine\bin\Debug\eBookManager.Engine.dll
+C:\z\sourcecode\.NET Core Blueprints\[]backup\eBook Manager and Catalog\eBookManager.Engine\bin\Debug\eBookManager.Engine.pdb
+C:\z\sourcecode\.NET Core Blueprints\[]backup\eBook Manager and Catalog\eBookManager.Engine\bin\Debug\Newtonsoft.Json.dll
+C:\z\sourcecode\.NET Core Blueprints\[]backup\eBook Manager and Catalog\eBookManager.Engine\bin\Debug\System.ValueTuple.dll
+C:\z\sourcecode\.NET Core Blueprints\[]backup\eBook Manager and Catalog\eBookManager.Engine\bin\Debug\Newtonsoft.Json.xml
+C:\z\sourcecode\.NET Core Blueprints\[]backup\eBook Manager and Catalog\eBookManager.Engine\obj\Debug\eBookManager.Engine.csprojResolveAssemblyReference.cache
+C:\z\sourcecode\.NET Core Blueprints\[]backup\eBook Manager and Catalog\eBookManager.Engine\obj\Debug\eBookManager.Engine.dll
+C:\z\sourcecode\.NET Core Blueprints\[]backup\eBook Manager and Catalog\eBookManager.Engine\obj\Debug\eBookManager.Engine.pdb
