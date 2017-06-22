@@ -192,6 +192,7 @@ namespace eBookManager
                 dlVirtualStorageSpaces.Items.Add("<create new storage space>");
             }
 
+            lblEbookCount.Text = "";
         }
 
         private void PopulateStorageSpacesList()
@@ -231,11 +232,36 @@ namespace eBookManager
             {
                 txtNewStorageSpaceName.Visible = true;
                 lblStorageSpaceDescription.Visible = true;
-                txtStorageSpaceDescription.Visible = true;
+                txtStorageSpaceDescription.ReadOnly = false;
                 btnSaveNewStorageSpace.Visible = true;
                 btnCancelNewStorageSpaceSave.Visible = true;
                 dlVirtualStorageSpaces.Enabled = false;
                 btnAddNewStorageSpace.Enabled = false;
+                lblEbookCount.Text = "";
+            }
+            else if (selectedValue != (int)StorageSpaceSelection.NoSelection)
+            {
+                // Find the contents of the selected storage space
+                int contentCount = (from c in spaces
+                                    where c.ID == selectedValue
+                                    select c).Count();
+                if (contentCount > 0)
+                {
+                    StorageSpace selectedSpace = (from c in spaces
+                                                  where c.ID == selectedValue
+                                                  select c).First();
+
+                    txtStorageSpaceDescription.Text = selectedSpace.Description;
+
+                    List<Document> eBooks = (selectedSpace.BookList == null) ? new List<Document> { } : selectedSpace.BookList;
+                    lblEbookCount.Text = $"Storage Space contains {eBooks.Count()} {(eBooks.Count() == 1 ? "eBook" : "eBooks")}";
+                    
+                    
+                }
+            }
+            else
+            {
+                lblEbookCount.Text = "";
             }
         }
 
@@ -269,7 +295,7 @@ namespace eBookManager
                         txtNewStorageSpaceName.Clear();
                         txtNewStorageSpaceName.Visible = false;
                         lblStorageSpaceDescription.Visible = false;
-                        txtStorageSpaceDescription.Visible = false;
+                        txtStorageSpaceDescription.ReadOnly = true;
                         txtStorageSpaceDescription.Clear();
                         btnSaveNewStorageSpace.Visible = false;
                         btnCancelNewStorageSpaceSave.Visible = false;
@@ -291,7 +317,7 @@ namespace eBookManager
             txtNewStorageSpaceName.Clear();
             txtNewStorageSpaceName.Visible = false;
             lblStorageSpaceDescription.Visible = false;
-            txtStorageSpaceDescription.Visible = false;
+            txtStorageSpaceDescription.ReadOnly = true;
             txtStorageSpaceDescription.Clear();
             btnSaveNewStorageSpace.Visible = false;
             btnCancelNewStorageSpaceSave.Visible = false;
@@ -303,7 +329,7 @@ namespace eBookManager
         {
             txtNewStorageSpaceName.Visible = true;
             lblStorageSpaceDescription.Visible = true;
-            txtStorageSpaceDescription.Visible = true;
+            txtStorageSpaceDescription.ReadOnly = false;
             btnSaveNewStorageSpace.Visible = true;
             btnCancelNewStorageSpaceSave.Visible = true;
             dlVirtualStorageSpaces.Enabled = false;
@@ -484,45 +510,7 @@ namespace eBookManager
 
 
 
-        //private void dlVirtualStorageSpaces_SelectedValueChanged(object sender, EventArgs e)
-        //{
-        //    int selectedIndex = e.GetHashCode();
-
-
-
-        //    #region ...
-        //    //string nonUniqueTaxCodeValue = "TaxCode1Z";
-        //    //List<(string taxcode, string taxdesc, string taxrate)> strTaxCodeXREF_List = GetTuple(nonUniqueTaxCodeValue, 27);
-
-        //    //List <(string, string, string)> GetTuple(string nonUniqueTaxCode, int increment)
-        //    //{
-        //    //    List<(string, string, string)> lst = new List<(string, string, string)>();
-        //    //    var returnTuple = (TaxCode: "", TaxDescription: "", TaxRate: "");
-        //    //    try
-        //    //    {                    
-        //    //        for (int i = 0; i <= 200 - 1; i++)
-        //    //        {
-        //    //            if ((i % increment) == 0)
-        //    //            {
-        //    //                returnTuple = (nonUniqueTaxCode, $"TaxDescription{i}", $"TaxRate{i}");
-        //    //            }
-        //    //            else
-        //    //                returnTuple = ($"TaxCode{i}", $"TaxDescription{i}", $"TaxRate{i}");
-        //    //            lst.Add(returnTuple);
-        //    //        }
-        //    //    }
-        //    //    catch 
-        //    //    {
-        //    //        lst.Add(returnTuple);
-        //    //    }
-        //    //    return lst;
-        //    //}
-
-
-        //    //var results = strTaxCodeXREF_List.Where(z => z.taxcode.Equals(nonUniqueTaxCodeValue));
-        //    //int counti = results.Count(); 
-        //    #endregion
-        //}
+        
 
 
     }

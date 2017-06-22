@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBookManager.Helper", "eBoo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0AC42B8B-CC29-4E31-8BC2-630E53FE3705}"
 	ProjectSection(SolutionItems) = preProject
-		readme.txt = readme.txt
+		about.txt = about.txt
 	EndProjectSection
 EndProject
 Global
