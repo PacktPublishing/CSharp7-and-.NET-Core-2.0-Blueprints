@@ -111,5 +111,8 @@
   <ItemGroup>
     <None Include="img\add_ebook_to_storage_space.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\ReadEbook.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

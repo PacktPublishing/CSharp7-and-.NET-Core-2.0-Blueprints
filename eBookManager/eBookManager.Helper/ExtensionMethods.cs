@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using eBookManager.Engine;
 using System.IO;
+using System.Windows.Forms;
 
 namespace eBookManager.Helper
 {
@@ -66,6 +67,8 @@ namespace eBookManager.Helper
         {
             return JsonConvert.SerializeObject(value);
         }
+
+        
 
         public static bool StorageSpaceExists(this List<StorageSpace> space, string nameValueToCheck, out int storageSpaceId)
         {
