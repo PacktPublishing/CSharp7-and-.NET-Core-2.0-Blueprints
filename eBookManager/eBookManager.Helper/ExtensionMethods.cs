@@ -67,9 +67,7 @@ namespace eBookManager.Helper
         {
             return JsonConvert.SerializeObject(value);
         }
-
-        
-
+                
         public static bool StorageSpaceExists(this List<StorageSpace> space, string nameValueToCheck, out int storageSpaceId)
         {
             bool exists = false;
@@ -87,7 +85,6 @@ namespace eBookManager.Helper
                 storageSpaceId = (from r in space
                                   select r.ID).Max() + 1;                                
             }
-
             return exists;
         }
 

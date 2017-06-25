@@ -25,6 +25,12 @@ namespace eBookManager
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            PopulateStorageSpaceList();
+        }
+
+        private void PopulateStorageSpaceList()
+        {
+            lstStorageSpaces.Clear();
             if (!(spaces == null))
             {
                 foreach (StorageSpace space in spaces)
@@ -82,6 +88,8 @@ namespace eBookManager
         {
             ImportBooks import = new ImportBooks();
             import.ShowDialog();
+            spaces = spaces.ReadFromDataStore(_jsonPath);
+            PopulateStorageSpaceList();
         }
 
         private void lstStorageSpaces_MouseClick(object sender, MouseEventArgs e)

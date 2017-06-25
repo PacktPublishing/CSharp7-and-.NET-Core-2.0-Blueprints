@@ -1,14 +1,11 @@
 ﻿using eBookManager.Engine;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using System.Xml;
 using static eBookManager.Helper.ExtensionMethods;
 using static System.Math;
- 
 
 namespace eBookManager
 {
@@ -18,12 +15,15 @@ namespace eBookManager
         private List<StorageSpace> spaces;
         private enum StorageSpaceSelection { New = -9999, NoSelection = -1 }
 
+        // C#7 (actually C# 6) - Expression-Bodied Property.
+        private HashSet<string> AllowedExtensions => new HashSet<string>(StringComparer.InvariantCultureIgnoreCase) { ".doc", ".docx", ".pdf", ".epub" };
+                
+        private enum Extention { doc = 0, docx = 1, pdf = 2, epub = 3 }
+
         public ImportBooks()
         {
             InitializeComponent();
-
             _jsonPath = Path.Combine(Application.StartupPath, "bookData.txt");
-
             spaces = spaces.ReadFromDataStore(_jsonPath);
         }
 
@@ -49,89 +49,21 @@ namespace eBookManager
                     PopulateBookList(di.FullName, root);
                     tvFoundBooks.Sort();
 
-                    #region ...
-                    //foreach(TreeNode n in tvFoundBooks.Nodes)
-                    //{
-                    //    if (n.Tag.ToString().Equals("d"))
-                    //    {
-                    //        n.ImageIndex = 4;
-                    //        n.SelectedImageIndex = 5;
-                    //    }
-                    //} 
-                    #endregion
-
                     root.Expand();
-
-
-                    #region ...
-                    //DocumentEngine engine = new DocumentEngine();
-
-                    //engine.GetAllFiles(path);
-
-                    //if (engine.BooksFoundCount >= 1)
-                    //{
-                    //PopulateTreeview(engine);
-
-                    //} 
-                    #endregion
                 }
             }
             catch (Exception ex)
             {
-
-                throw;
-            }
-
-
-
-        }
-
-        /*
-        private void PopulateTreeview(DocumentEngine engine)
-        {
-            List<string> ebooks = engine.BooksFound;
-            //ebooks.Sort();
-            //TreeNode[] children = new TreeNode[ebooks.Count]; // ("Parent", )
-            List<TreeNode> children = new List<TreeNode>();
-            string currentParent = "";
-            foreach (string book in ebooks)
-            {
-                if (book != null)
-                {
-                    FileInfo fi = new FileInfo(book);
-                    string ebookName = fi.Name;
-                    TreeNode t = new TreeNode();
-                    t.Text = ebookName;
-                    t.Tag = book;
-
-                    if (fi.Directory.Name.Equals(currentParent))
-                    {
-                        children.Add(t);
-                    }
-                    else if (currentParent.Equals(""))
-                    {
-                        currentParent = fi.Directory.Name;
-                        children.Add(t);
-                    }
-                    else
-                    {
-                        TreeNode tn = new TreeNode(currentParent, children.ToArray());
-                        tvFoundBooks.Nodes.Add(tn);
-                        children.Clear();
-                        children.Add(t);
-                        currentParent = fi.Directory.Name;
-                    }
-                }
+                MessageBox.Show(ex.Message);
             }
         }
-        */
+        
         public void PopulateBookList(string paramDir, TreeNode paramNode)
         {
             DirectoryInfo dir = new DirectoryInfo(paramDir);
             foreach (DirectoryInfo dirInfo in dir.GetDirectories())
             {
                 TreeNode node = new TreeNode(dirInfo.Name);
-                //node.Tag = "d";
                 node.ImageIndex = 4;
                 node.SelectedImageIndex = 5;
 
@@ -155,13 +87,7 @@ namespace eBookManager
                     tvFoundBooks.Nodes.Add(node);
             }
         }
-
-
-        // C#7 - Expression-Bodied Property.
-        private HashSet<string> AllowedExtensions => new HashSet<string>(StringComparer.InvariantCultureIgnoreCase) { ".doc", ".docx", ".pdf", ".epub" };
-
-        private enum Extention { doc = 0, docx = 1, pdf = 2, epub = 3 }
-
+        
         private void tvFoundBooks_AfterSelect(object sender, TreeViewEventArgs e)
         {
             DocumentEngine engine = new DocumentEngine();
@@ -186,7 +112,7 @@ namespace eBookManager
         private void ImportBooks_Load(object sender, EventArgs e)
         {
             PopulateStorageSpacesList();
-
+                        
             if (dlVirtualStorageSpaces.Items.Count == 0)
             {
                 dlVirtualStorageSpaces.Items.Add("<create new storage space>");
@@ -198,7 +124,6 @@ namespace eBookManager
         private void PopulateStorageSpacesList()
         {
             List<KeyValuePair<int, string>> lstSpaces = new List<KeyValuePair<int, string>>();
-            //BindStorageSpaceList(-1, "Select Storage Space");
             BindStorageSpaceList((int)StorageSpaceSelection.NoSelection, "Select Storage Space");
 
             void BindStorageSpaceList(int key, string value) // Local function
@@ -208,7 +133,6 @@ namespace eBookManager
 
             if (spaces is null || spaces.Count() == 0) // Pattern matching
             {
-                //BindStorageSpaceList(-9999, "<create new>");
                 BindStorageSpaceList((int)StorageSpaceSelection.New, "<create new>");
             }
             else
@@ -255,8 +179,6 @@ namespace eBookManager
 
                     List<Document> eBooks = (selectedSpace.BookList == null) ? new List<Document> { } : selectedSpace.BookList;
                     lblEbookCount.Text = $"Storage Space contains {eBooks.Count()} {(eBooks.Count() == 1 ? "eBook" : "eBooks")}";
-                    
-                    
                 }
             }
             else
@@ -278,7 +200,7 @@ namespace eBookManager
                     // throw expressions: bool spaceExists = (space exists = false) ? return false : throw exception                    
                     // Out variables
                     bool spaceExists = (!spaces.StorageSpaceExists(newName, out int nextID)) ? false : throw new Exception("The storage space you are trying to add already exists.");
-
+                                        
                     if (!spaceExists)
                     {
                         StorageSpace newSpace = new StorageSpace();
@@ -286,9 +208,7 @@ namespace eBookManager
                         newSpace.ID = nextID;
                         newSpace.Description = txtStorageSpaceDescription.Text;
                         spaces.Add(newSpace);
-                        //string jsonData = spaces.ToJson();
-                        //spaces.WriteToDataStore(_jsonPath);
-                        //UpdateStorageSpaceBooks(newSpace.ID);
+
                         PopulateStorageSpacesList();
 
                         // Save new Storage Space Name
@@ -309,7 +229,6 @@ namespace eBookManager
                 txtNewStorageSpaceName.SelectAll();
                 MessageBox.Show(ex.Message);
             }
-
         }
 
         private void btnCancelNewStorageSpaceSave_Click(object sender, EventArgs e)
@@ -357,9 +276,6 @@ namespace eBookManager
         {
             try
             {
-                //List<StorageSpace> existingSpaces = new List<StorageSpace>();
-                //existingSpaces = existingSpaces.ReadFromDataStore(_jsonPath);
-
                 int iCount = (from s in spaces
                               where s.ID == storageSpaceId
                               select s).Count();
@@ -427,10 +343,6 @@ namespace eBookManager
                     }
 
                 }
-                //else
-                //{
-                //    // Insert
-                //}
 
                 spaces.WriteToDataStore(_jsonPath);
                 PopulateStorageSpacesList();
@@ -503,15 +415,6 @@ namespace eBookManager
 
         }
         #endregion
-
-
-
-
-
-
-
-        
-
-
+                
     }
 }

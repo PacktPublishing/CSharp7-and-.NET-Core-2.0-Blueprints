@@ -11,6 +11,7 @@ namespace eBookManager.Engine
 {
     public class DocumentEngine
     {
+        /*
         public List<string> BooksFound { get; private set; }
         public int BooksFoundCount { get; private set; }
         public void GetAllFiles(string folder)
@@ -41,10 +42,9 @@ namespace eBookManager.Engine
             //}
 
             BooksFoundCount = lstResults.Count();
-
             
-
         }
+        */
 
         public (DateTime dateCreated, DateTime dateLastAccessed, string fileName, string fileExtension, long fileLength, bool error) GetFileProperties(string filePath)
         {
@@ -56,7 +56,7 @@ namespace eBookManager.Engine
                 fi.Refresh();
                 returnTuple = (fi.CreationTime, fi.LastAccessTime, fi.Name, fi.Extension, fi.Length, false);
             }
-            catch (Exception ex)
+            catch
             {
                 returnTuple.error = true;
             }
