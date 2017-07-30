@@ -1,0 +1,29 @@
+﻿.score {
+    font-size: 40px;
+}
+.team {
+    font-size: 30px;
+}
+.player {
+    font-size: 16.5px;
+}
+.info {
+    font-size: 18px;
+}
+.btn-round-xs {
+    border-radius: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+.btn-round {
+    border-radius: 17px;
+}
+.navbar-top-links {
+    margin-right: 0;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}

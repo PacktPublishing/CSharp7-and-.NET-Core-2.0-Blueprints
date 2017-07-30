@@ -1,0 +1,4 @@
+https://bootsnipp.com
+http://getbootstrap.com/components
+http://fontawesome.io
+Inspired by: https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/index.html
