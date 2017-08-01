@@ -36,7 +36,7 @@ namespace cricketScoreTrack
 
             bundles.Add(new ScriptBundle("~/bundles/custom").Include(
                     "~/Scripts/custom.js"));
-
+                        
             ScriptManager.ScriptResourceMapping.AddDefinition(
                 "respond",
                 new ScriptResourceDefinition

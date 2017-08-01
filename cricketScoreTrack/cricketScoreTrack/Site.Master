@@ -10,11 +10,13 @@
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
-        <%: Scripts.Render("~/bundles/custom") %>
+        <%: Scripts.Render("~/bundles/custom") %>        
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />    
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <%--<link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-select.css" rel="stylesheet" />--%>
 </head>
 <body>
     <form runat="server">
@@ -33,7 +35,7 @@
                 <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
                 <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />                
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
                 <%--Site Scripts--%>
             </Scripts>
@@ -51,7 +53,8 @@
                     <a class="navbar-brand" runat="server" href="~/">Cricket Score Tracker</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-top-links navbar-nav"><%--nav navbar-nav--%>
+                    <ul class="nav navbar-top-links navbar-nav">
+                        <%--nav navbar-nav--%>
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
@@ -64,10 +67,20 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> -Because we love cricket too!</p>
             </footer>
         </div>
 
+        <%--<script>
+            $(document).on('click', '.dropdown-menu li a', function () {
+                $(this).parent().parent().parent().find('.btnBatsman1').val($(this).html());
+            });
+        </script>--%>
+
     </form>
+
+
+
+
 </body>
 </html>

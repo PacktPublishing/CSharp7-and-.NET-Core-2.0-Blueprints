@@ -3,47 +3,99 @@ using cricketScoreTrack.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+
 
 namespace cricketScoreTrack
 {
     public partial class _Default : Page
     {
+        List<Player> southAfrica;
+        List<Player> india;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<Player> southAfrica = Get_SA_Players();
-            List<Player> india = Get_India_Players();
+           southAfrica = Get_SA_Players();
+           india = Get_India_Players();
         }
 
         private List<Player> Get_SA_Players()
         {
             List<Player> players = new List<Player>();
 
+            #region Batsmen
             Batsman b1 = new Batsman();
-            b1.FirstName = "Name 1";
-            b1.LastName = "Surname 1";
-            b1.Age = 25;
+            b1.FirstName = "Faf";
+            b1.LastName = "du Plessis";
+            b1.Age = 33;
             players.Add(b1);
 
             Batsman b2 = new Batsman();
-            b2.FirstName = "Name 2";
-            b2.LastName = "Surname 2";
+            b2.FirstName = "Temba";
+            b2.LastName = "Bavuma";
             b2.Age = 27;
             players.Add(b2);
 
             Batsman b3 = new Batsman();
-            b3.FirstName = "Name 3";
-            b3.LastName = "Surname 3";
-            b3.Age = 22;
+            b3.FirstName = "Stephen";
+            b3.LastName = "Cook";
+            b3.Age = 34;
             players.Add(b3);
 
+
+            Batsman b4 = new Batsman();
+            b4.FirstName = "Theunis";
+            b4.LastName = "de Bruyn";
+            b4.Age = 24;
+            players.Add(b4);
+
+            Batsman b5 = new Batsman();
+            b5.FirstName = "Dean";
+            b5.LastName = "Elgar";
+            b5.Age = 30;
+            players.Add(b5);
+
+            Batsman b6 = new Batsman();
+            b6.FirstName = "Reeza";
+            b6.LastName = "Hendricks";
+            b6.Age = 27;
+            players.Add(b6);
+            #endregion
+
+            #region All Rounders
             AllRounder ar1 = new AllRounder();
-            ar1.FirstName = "Name 1";
-            ar1.LastName = "Surname 1";
-            ar1.Age = 27;
+            ar1.FirstName = "Farhaan";
+            ar1.LastName = "Behardien";
+            ar1.Age = 33;
             players.Add(ar1);
+
+            AllRounder ar2 = new AllRounder();
+            ar2.FirstName = "JP";
+            ar2.LastName = "Duminy";
+            ar2.Age = 33;
+            players.Add(ar2);
+
+            AllRounder ar3 = new AllRounder();
+            ar3.FirstName = "Chris";
+            ar3.LastName = "Morris";
+            ar3.Age = 30;
+            players.Add(ar3);
+
+            AllRounder ar4 = new AllRounder();
+            ar4.FirstName = "Dwaine";
+            ar4.LastName = "Pretorius";
+            ar4.Age = 28;
+            players.Add(ar4);
+
+            AllRounder ar5 = new AllRounder();
+            ar5.FirstName = "JJ";
+            ar5.LastName = "Smuts";
+            ar5.Age = 28;
+            players.Add(ar5);
+            #endregion
 
             return players;
         }
@@ -52,29 +104,75 @@ namespace cricketScoreTrack
         {
             List<Player> players = new List<Player>();
 
+            #region Batsmen
             Batsman b1 = new Batsman();
-            b1.FirstName = "Name 1";
-            b1.LastName = "Surname 1";
-            b1.Age = 25;
+            b1.FirstName = "Shikhar";
+            b1.LastName = "Dhawan";
+            b1.Age = 31;
             players.Add(b1);
 
             Batsman b2 = new Batsman();
-            b2.FirstName = "Name 2";
-            b2.LastName = "Surname 2";
-            b2.Age = 27;
+            b2.FirstName = "Gautam";
+            b2.LastName = "Gambhir";
+            b2.Age = 35;
             players.Add(b2);
 
             Batsman b3 = new Batsman();
-            b3.FirstName = "Name 3";
-            b3.LastName = "Surname 3";
-            b3.Age = 22;
+            b3.FirstName = "Abhinav";
+            b3.LastName = "Mukund";
+            b3.Age = 27;
             players.Add(b3);
 
+            Batsman b4 = new Batsman();
+            b4.FirstName = "K. L.";
+            b4.LastName = "Rahul";
+            b4.Age = 25;
+            players.Add(b4);
+
+            Batsman b5 = new Batsman();
+            b5.FirstName = "Murali";
+            b5.LastName = "Vijay";
+            b5.Age = 33;
+            players.Add(b5);
+            #endregion
+
+            #region All Rounders
             AllRounder ar1 = new AllRounder();
-            ar1.FirstName = "Name 1";
-            ar1.LastName = "Surname 1";
-            ar1.Age = 27;
+            ar1.FirstName = "Ravichandran";
+            ar1.LastName = "Ashwin";
+            ar1.Age = 30;
             players.Add(ar1);
+
+            AllRounder ar2 = new AllRounder();
+            ar2.FirstName = "Stuart";
+            ar2.LastName = "Binny";
+            ar2.Age = 33;
+            players.Add(ar2);
+
+            AllRounder ar3 = new AllRounder();
+            ar3.FirstName = "Ravindra";
+            ar3.LastName = "Jadeja";
+            ar3.Age = 28;
+            players.Add(ar3);
+
+            AllRounder ar4 = new AllRounder();
+            ar4.FirstName = "Hardik";
+            ar4.LastName = "Pandya";
+            ar4.Age = 23;
+            players.Add(ar4);
+
+            AllRounder ar5 = new AllRounder();
+            ar5.FirstName = "Axar";
+            ar5.LastName = "Patel";
+            ar5.Age = 23;
+            players.Add(ar5);
+
+            AllRounder ar6 = new AllRounder();
+            ar6.FirstName = "Parvez";
+            ar6.LastName = "Rasool";
+            ar6.Age = 28;
+            players.Add(ar6);
+            #endregion
 
             return players;
         }
@@ -82,6 +180,7 @@ namespace cricketScoreTrack
         #region Player Buttons
         protected void btnBatsman1_Click(object sender, EventArgs e)
         {
+            ddlPlayerSelect.Text = GenerateBootstrapDropdown(southAfrica, typeof(Batsman));
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
         }
 
@@ -93,8 +192,54 @@ namespace cricketScoreTrack
         protected void btnBowler_Click(object sender, EventArgs e)
         {
 
-        } 
+        }
         #endregion
+
+
+        private string GenerateBootstrapDropdown(List<Player> team, Type type)
+        {
+            List<string> players = new List<string>();
+
+            if (type == typeof(Batsman))
+                players = (from r in team.OfType<Batsman>()
+                           select $"{r.FirstName} {r.LastName}").ToList();
+
+            if (type == typeof(AllRounder))
+                players = (from r in team.OfType<AllRounder>()
+                           select $"{r.FirstName} {r.LastName}").ToList();
+
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append(" <div class=\"dropdown\">");
+            sb.Append("   <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"bstpDdlPlayerSelect\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">");
+            sb.Append("     Dropdown");
+            sb.Append("     <span class=\"caret\"></span>");
+            sb.Append("   </button>");
+            sb.Append("   <ul class=\"dropdown-menu\" id=\"demolist\" aria-labelledby=\"bstpDdlPlayerSelect\">");
+
+            //sb.Append(" <select class=\"selectpicker\">");
+
+
+
+
+            foreach (string player in players)
+            {
+                //sb.Append($"   <option>{player.ToString()}</option>");
+                sb.Append($"     <li><a href=\"#\">{player.ToString()}</a></li>");                
+            }
+
+            sb.Append(" </select>");
+
+            //sb.Append("     <li><a href="#">Another action</a></li>");
+            //sb.Append("     <li><a href="#">Something else here</a></li>");
+            //sb.Append("     <li role="separator" class="divider"></li>");
+            //sb.Append("     <li><a href="#">Separated link</a></li>");
+            sb.Append("   </ul>");
+            sb.Append(" </div>");
+
+            return sb.ToString();
+        }
+
 
         #region Runs Scored Buttons
         protected void btnRun_0_Click(object sender, EventArgs e)
@@ -135,7 +280,7 @@ namespace cricketScoreTrack
         protected void btnRun_Undo_Click(object sender, EventArgs e)
         {
 
-        } 
+        }
         #endregion
 
         #region Action Buttons
@@ -167,7 +312,7 @@ namespace cricketScoreTrack
         protected void btnAction_EndOver_Click(object sender, EventArgs e)
         {
 
-        } 
+        }
         #endregion
     }
 }

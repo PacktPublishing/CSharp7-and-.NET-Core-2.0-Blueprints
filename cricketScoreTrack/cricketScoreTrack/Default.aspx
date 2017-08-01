@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Dashboard" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="cricketScoreTrack._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    
     <div class="row page-header">
         <h1>Everybody loves cricket <small>Cricket Score Tracker</small></h1>
     </div>
@@ -133,22 +133,32 @@
                                     <%--<button type="button" class="btn btn-default btn-round-xs btn-xs">J Trott</button>--%>
                                     <asp:Button runat="server" ID="btnBatsman1" class="btn btn-default btn-round-xs btn-xs" Text="J Trott" OnClick="btnBatsman1_Click"></asp:Button>
                                 </td>
-                                <td><asp:Label runat="server" ID="lblBatsman1Runs" Text="0"></asp:Label></td>
-                                <td><asp:Label runat="server" ID="lblBatsman1Balls" Text="0"></asp:Label></td>
-                                <td><asp:Label runat="server" ID="lblBatsman1Fours" Text="0"></asp:Label></td>
-                                <td><asp:Label runat="server" ID="lblBatsman1Sixes" Text="0"></asp:Label></td>
-                                <td><asp:Label runat="server" ID="lblBatsman1StrikeRate" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBatsman1Runs" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBatsman1Balls" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBatsman1Fours" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBatsman1Sixes" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBatsman1StrikeRate" Text="0"></asp:Label></td>
                             </tr>
                             <tr>
                                 <td>
                                     <%--<button type="button" class="btn btn-primary btn-round-xs btn-xs">I Bell</button></td>--%>
                                     <asp:Button runat="server" ID="btnBatsman2" class="btn btn-primary btn-round-xs btn-xs" Text="I Bell" OnClick="btnBatsman2_Click"></asp:Button>
                                 </td>
-                                <td><asp:Label runat="server" ID="lblBatsman2Runs" Text="0"></asp:Label></td>
-                                <td><asp:Label runat="server" ID="lblBatsman2Balls" Text="0"></asp:Label></td>
-                                <td><asp:Label runat="server" ID="lblBatsman2Fours" Text="0"></asp:Label></td>
-                                <td><asp:Label runat="server" ID="lblBatsman2Sixes" Text="0"></asp:Label></td>
-                                <td><asp:Label runat="server" ID="lblBatsman2StrikeRate" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBatsman2Runs" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBatsman2Balls" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBatsman2Fours" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBatsman2Sixes" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBatsman2StrikeRate" Text="0"></asp:Label></td>
                             </tr>
                             <tr>
                                 <td>Extras nb 0, wd 0, b 0, lb 0 Partnership</td>
@@ -170,11 +180,16 @@
                                 <td>
                                     <%--<button type="button" class="btn btn-primary btn-round-xs btn-xs">S Meaker</button></td>--%>
                                     <asp:Button runat="server" ID="btnBowler" class="btn btn-primary btn-round-xs btn-xs" Text="S Meaker" OnClick="btnBowler_Click"></asp:Button>
-                                <td><asp:Label runat="server" ID="lblBowlerOvers" Text="0"></asp:Label></td>
-                                <td><asp:Label runat="server" ID="lblBowlerMaidens" Text="0"></asp:Label></td>
-                                <td><asp:Label runat="server" ID="lblBowlerRuns" Text="0"></asp:Label></td>
-                                <td><asp:Label runat="server" ID="lblBowlerWickets" Text="0"></asp:Label></td>
-                                <td><asp:Label runat="server" ID="lblBowlerEconomy" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBowlerOvers" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBowlerMaidens" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBowlerRuns" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBowlerWickets" Text="0"></asp:Label></td>
+                                <td>
+                                    <asp:Label runat="server" ID="lblBowlerEconomy" Text="0"></asp:Label></td>
                             </tr>
                         </tbody>
                     </table>
@@ -204,7 +219,7 @@
                             </div>
                         </div>
                         <div class="panel-footer">
-                            <div class="pull-left">                                
+                            <div class="pull-left">
                                 <asp:Button runat="server" ID="btnAction_Wide" class="btn btn-default btn-round" Text="wide" OnClick="btnAction_Wide_Click"></asp:Button>
                                 <asp:Button runat="server" ID="btnAction_NoBall" class="btn btn-default btn-round" Text="no ball" OnClick="btnAction_NoBall_Click"></asp:Button>
                                 <asp:Button runat="server" ID="btnAction_Bye" class="btn btn-default btn-round" Text="bye" OnClick="btnAction_Bye_Click"></asp:Button>
@@ -238,33 +253,35 @@
     </div>
 
     <div class="modal fade" id="playerModal" tabindex="-1" role="dialog"
-            aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close"
-                            data-dismiss="modal" aria-hidden="true">
-                            &times;
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel">title
-                        </h4>
-                    </div>
-                    <div class="modal-body">
-                        something
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default"
-                            data-dismiss="modal">
-                            close
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                            save
-                        </button>
-                    </div>
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">title
+                    </h4>
                 </div>
-                <!-- /.modal-content -->
+                <div class="modal-body">
+                    <%--<asp:DropDownList ID="ddlPlayerSelect" runat="server"></asp:DropDownList>--%>
+                    <asp:Literal ID="ddlPlayerSelect" runat="server"></asp:Literal>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                        close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        save
+                    </button>
+                </div>
             </div>
-            <!-- /.modal -->
+            <!-- /.modal-content -->
         </div>
+        <!-- /.modal -->
+    </div>
 
 </asp:Content>
