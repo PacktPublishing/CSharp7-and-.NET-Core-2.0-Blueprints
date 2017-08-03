@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Dashboard" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="cricketScoreTrack._Default" %>
 
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
     <div class="row page-header">
@@ -131,7 +132,7 @@
                             <tr>
                                 <td>
                                     <%--<button type="button" class="btn btn-default btn-round-xs btn-xs">J Trott</button>--%>
-                                    <asp:Button runat="server" ID="btnBatsman1" class="btn btn-default btn-round-xs btn-xs" Text="J Trott" OnClick="btnBatsman1_Click"></asp:Button>
+                                    <asp:Button runat="server" ID="btnBatsman1" class="btn btn-default btn-round-xs btn-xs" Text="Select Player" OnClick="btnBatsman1_Click"></asp:Button>
                                 </td>
                                 <td>
                                     <asp:Label runat="server" ID="lblBatsman1Runs" Text="0"></asp:Label></td>
@@ -147,7 +148,7 @@
                             <tr>
                                 <td>
                                     <%--<button type="button" class="btn btn-primary btn-round-xs btn-xs">I Bell</button></td>--%>
-                                    <asp:Button runat="server" ID="btnBatsman2" class="btn btn-primary btn-round-xs btn-xs" Text="I Bell" OnClick="btnBatsman2_Click"></asp:Button>
+                                    <asp:Button runat="server" ID="btnBatsman2" class="btn btn-primary btn-round-xs btn-xs" Text="Select Player" OnClick="btnBatsman2_Click"></asp:Button>
                                 </td>
                                 <td>
                                     <asp:Label runat="server" ID="lblBatsman2Runs" Text="0"></asp:Label></td>
@@ -179,7 +180,7 @@
                             <tr>
                                 <td>
                                     <%--<button type="button" class="btn btn-primary btn-round-xs btn-xs">S Meaker</button></td>--%>
-                                    <asp:Button runat="server" ID="btnBowler" class="btn btn-primary btn-round-xs btn-xs" Text="S Meaker" OnClick="btnBowler_Click"></asp:Button>
+                                    <asp:Button runat="server" ID="btnBowler" class="btn btn-primary btn-round-xs btn-xs" Text="Select Bowler" OnClick="btnBowler_Click"></asp:Button>
                                 <td>
                                     <asp:Label runat="server" ID="lblBowlerOvers" Text="0"></asp:Label></td>
                                 <td>
@@ -261,22 +262,18 @@
                         data-dismiss="modal" aria-hidden="true">
                         &times;
                     </button>
-                    <h4 class="modal-title" id="myModalLabel">title
+                    <h4 class="modal-title" id="myModalLabel">Select your player
                     </h4>
                 </div>
                 <div class="modal-body">
-                    <%--<asp:DropDownList ID="ddlPlayerSelect" runat="server"></asp:DropDownList>--%>
-                    <asp:Literal ID="ddlPlayerSelect" runat="server"></asp:Literal>
-                    
+                    <%--<asp:Literal ID="ddlPlayerSelect" runat="server"></asp:Literal>--%>      
+                    <asp:DropDownList runat="server" ID="ddlPlayersSelect" class="btn btn-default dropdown-toggle" data-toggle="dropdown"></asp:DropDownList>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default"
-                        data-dismiss="modal">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
                         close
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                        save
-                    </button>
+                    </button>                    
+                    <asp:Button runat="server" ID="btnSelectPlayer1" class="btn btn-primary" Text="Select" OnClick="btnSelectPlayer1_Click"></asp:Button>
                 </div>
             </div>
             <!-- /.modal-content -->

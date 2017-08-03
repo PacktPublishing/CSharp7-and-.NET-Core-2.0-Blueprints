@@ -18,8 +18,8 @@ namespace cricketScoreTrack
 
         protected void Page_Load(object sender, EventArgs e)
         {
-           southAfrica = Get_SA_Players();
-           india = Get_India_Players();
+            southAfrica = Get_SA_Players();
+            india = Get_India_Players();
         }
 
         private List<Player> Get_SA_Players()
@@ -180,7 +180,8 @@ namespace cricketScoreTrack
         #region Player Buttons
         protected void btnBatsman1_Click(object sender, EventArgs e)
         {
-            ddlPlayerSelect.Text = GenerateBootstrapDropdown(southAfrica, typeof(Batsman));
+            //ddlPlayerSelect.Text = GenerateBootstrapDropdown(southAfrica, typeof(Batsman));
+            GenerateBootstrapDropdown(southAfrica, typeof(Batsman));
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
         }
 
@@ -196,7 +197,7 @@ namespace cricketScoreTrack
         #endregion
 
 
-        private string GenerateBootstrapDropdown(List<Player> team, Type type)
+        private void GenerateBootstrapDropdown(List<Player> team, Type type)
         {
             List<string> players = new List<string>();
 
@@ -208,36 +209,36 @@ namespace cricketScoreTrack
                 players = (from r in team.OfType<AllRounder>()
                            select $"{r.FirstName} {r.LastName}").ToList();
 
-            StringBuilder sb = new StringBuilder();
+            //ddlPlayersSelect
+            
+            int liVal = 0;
 
-            sb.Append(" <div class=\"dropdown\">");
-            sb.Append("   <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"bstpDdlPlayerSelect\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">");
-            sb.Append("     Dropdown");
-            sb.Append("     <span class=\"caret\"></span>");
-            sb.Append("   </button>");
-            sb.Append("   <ul class=\"dropdown-menu\" id=\"demolist\" aria-labelledby=\"bstpDdlPlayerSelect\">");
+            //StringBuilder sb = new StringBuilder();
 
-            //sb.Append(" <select class=\"selectpicker\">");
-
-
-
+            //sb.Append(" <div class=\"dropdown\">");
+            //sb.Append("   <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"bstpDdlPlayerSelect\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">");
+            //sb.Append("     Dropdown");
+            //sb.Append("     <span class=\"caret\"></span>");
+            //sb.Append("   </button>");
+            //sb.Append("   <ul class=\"dropdown-menu\" id=\"playerMenu\" aria-labelledby=\"bstpDdlPlayerSelect\">");
 
             foreach (string player in players)
             {
-                //sb.Append($"   <option>{player.ToString()}</option>");
-                sb.Append($"     <li><a href=\"#\">{player.ToString()}</a></li>");                
+                //sb.Append($"     <li><a href=\"#\">{player.ToString()}</a></li>");
+
+                ListItem li = new ListItem();
+                li.Text = player.ToString();
+                li.Value = liVal.ToString();
+                ddlPlayersSelect.Items.Add(li);
+
+                liVal += 1;
             }
 
-            sb.Append(" </select>");
+            //sb.Append(" </select>");
+            //sb.Append("   </ul>");
+            //sb.Append(" </div>");
 
-            //sb.Append("     <li><a href="#">Another action</a></li>");
-            //sb.Append("     <li><a href="#">Something else here</a></li>");
-            //sb.Append("     <li role="separator" class="divider"></li>");
-            //sb.Append("     <li><a href="#">Separated link</a></li>");
-            sb.Append("   </ul>");
-            sb.Append(" </div>");
-
-            return sb.ToString();
+            //return sb.ToString();
         }
 
 
@@ -314,5 +315,10 @@ namespace cricketScoreTrack
 
         }
         #endregion
+
+        protected void btnSelectPlayer1_Click(object sender, EventArgs e)
+        {
+            btnBatsman1.Text = ddlPlayersSelect.SelectedItem.ToString();
+        }
     }
 }

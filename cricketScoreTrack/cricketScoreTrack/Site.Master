@@ -70,11 +70,14 @@
                 <p>&copy; <%: DateTime.Now.Year %> -Because we love cricket too!</p>
             </footer>
         </div>
+                
 
-        <%--<script>
-            $(document).on('click', '.dropdown-menu li a', function () {
-                $(this).parent().parent().parent().find('.btnBatsman1').val($(this).html());
-            });
+        <%--<script type="text/javascript">
+            $('#playerMenu li').click(function () {
+                $('#bstpDdlPlayerSelect').html($(this).text() + '<span class="caret"></span>')
+                $('#btnSelectPlayer1').attr("valll", $(this).text())
+            })
+
         </script>--%>
 
     </form>
