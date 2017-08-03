@@ -1,1 +1,7 @@
-# CSharp-7-and-.NET-Core-2.0-Blueprints
+# C# 7 and .NET Core 2.0 Blueprints
+
+# eBook Manager
+This is a cool little utility app to manage all your ebooks into virtual collections
+
+# Cricket Calculator and Score Tracker
+Love the game? So do we. A Bootstrap ASP.NET site that keeps track of your favorite cricket teams score.
