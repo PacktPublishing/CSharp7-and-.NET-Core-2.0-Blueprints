@@ -3,8 +3,6 @@ using cricketScoreTrack.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -13,6 +11,7 @@ namespace cricketScoreTrack
 {
     public partial class _Default : Page
     {
+        public enum SelectedPlayer { Batsman1 = 1, Batsman2 = 2, Bowler = 3 }
         List<Player> southAfrica;
         List<Player> india;
 
@@ -180,19 +179,26 @@ namespace cricketScoreTrack
         #region Player Buttons
         protected void btnBatsman1_Click(object sender, EventArgs e)
         {
-            //ddlPlayerSelect.Text = GenerateBootstrapDropdown(southAfrica, typeof(Batsman));
-            GenerateBootstrapDropdown(southAfrica, typeof(Batsman));
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+            BatsmanSelection(SelectedPlayer.Batsman1);
         }
 
         protected void btnBatsman2_Click(object sender, EventArgs e)
         {
+            BatsmanSelection(SelectedPlayer.Batsman2);
+        }
 
+        protected void BatsmanSelection(SelectedPlayer selectedPlayer)
+        {
+            btnSelectPlayer1.CommandArgument = Enum.GetName(typeof(SelectedPlayer), (int)selectedPlayer);
+            GenerateBootstrapDropdown(southAfrica, typeof(Batsman));
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
         }
 
         protected void btnBowler_Click(object sender, EventArgs e)
         {
-
+            btnSelectPlayer1.CommandArgument = nameof(SelectedPlayer.Bowler);
+            GenerateBootstrapDropdown(southAfrica, typeof(AllRounder));
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
         }
         #endregion
 
@@ -209,23 +215,10 @@ namespace cricketScoreTrack
                 players = (from r in team.OfType<AllRounder>()
                            select $"{r.FirstName} {r.LastName}").ToList();
 
-            //ddlPlayersSelect
-            
             int liVal = 0;
-
-            //StringBuilder sb = new StringBuilder();
-
-            //sb.Append(" <div class=\"dropdown\">");
-            //sb.Append("   <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"bstpDdlPlayerSelect\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">");
-            //sb.Append("     Dropdown");
-            //sb.Append("     <span class=\"caret\"></span>");
-            //sb.Append("   </button>");
-            //sb.Append("   <ul class=\"dropdown-menu\" id=\"playerMenu\" aria-labelledby=\"bstpDdlPlayerSelect\">");
-
+            ddlPlayersSelect.Items.Clear();
             foreach (string player in players)
             {
-                //sb.Append($"     <li><a href=\"#\">{player.ToString()}</a></li>");
-
                 ListItem li = new ListItem();
                 li.Text = player.ToString();
                 li.Value = liVal.ToString();
@@ -233,12 +226,6 @@ namespace cricketScoreTrack
 
                 liVal += 1;
             }
-
-            //sb.Append(" </select>");
-            //sb.Append("   </ul>");
-            //sb.Append(" </div>");
-
-            //return sb.ToString();
         }
 
 
@@ -318,7 +305,25 @@ namespace cricketScoreTrack
 
         protected void btnSelectPlayer1_Click(object sender, EventArgs e)
         {
-            btnBatsman1.Text = ddlPlayersSelect.SelectedItem.ToString();
+            string commandArgument = btnSelectPlayer1.CommandArgument;
+
+            switch (commandArgument)
+            {
+                case nameof(SelectedPlayer.Batsman1):
+                    btnBatsman1.Text = ddlPlayersSelect.SelectedItem.ToString();
+                    break;
+                case nameof(SelectedPlayer.Batsman2):
+                    btnBatsman2.Text = ddlPlayersSelect.SelectedItem.ToString();
+                    break;
+                case nameof(SelectedPlayer.Bowler):
+                    btnBowler.Text = ddlPlayersSelect.SelectedItem.ToString();
+                    break;
+            }            
+        }
+
+        protected void ddlPlayersSelect_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

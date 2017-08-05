@@ -10,13 +10,6 @@
     <div class="row">
         <div class="col-md-4">
             <h2>Ball-by-Ball</h2>
-            <%--<p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>--%>
             <div class="alert alert-success" role="alert">Over 1</div>
             <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-info">0.2 S Meaker to J Trott 1 RUNS<span class="badge">1</span></a>
@@ -267,13 +260,13 @@
                 </div>
                 <div class="modal-body">
                     <%--<asp:Literal ID="ddlPlayerSelect" runat="server"></asp:Literal>--%>      
-                    <asp:DropDownList runat="server" ID="ddlPlayersSelect" class="btn btn-default dropdown-toggle" data-toggle="dropdown"></asp:DropDownList>
+                    <asp:DropDownList runat="server" ID="ddlPlayersSelect" class="btn btn-default dropdown-toggle" data-toggle="dropdown" OnSelectedIndexChanged="ddlPlayersSelect_SelectedIndexChanged"></asp:DropDownList>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">
                         close
                     </button>                    
-                    <asp:Button runat="server" ID="btnSelectPlayer1" class="btn btn-primary" Text="Select" OnClick="btnSelectPlayer1_Click"></asp:Button>
+                    <asp:Button runat="server" ID="btnSelectPlayer1" class="btn btn-primary" Text="Select" OnClick="btnSelectPlayer1_Click" CommandArgument="none"></asp:Button>
                 </div>
             </div>
             <!-- /.modal-content -->

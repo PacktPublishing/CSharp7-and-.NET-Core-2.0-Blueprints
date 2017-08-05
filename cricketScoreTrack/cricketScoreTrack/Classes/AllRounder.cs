@@ -1,9 +1,6 @@
 ﻿using cricketScoreTrack.BaseClasses;
 using cricketScoreTrack.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace cricketScoreTrack.Classes
 {
@@ -11,11 +8,11 @@ namespace cricketScoreTrack.Classes
     /// An all-rounder is a cricketer who regularly performs well at both batting and bowling.
     /// Although all bowlers must bat and quite a few batsmen do bowl occasionally
     /// </summary>
-    public class AllRounder : Player, IBatsman, IBowler
+    public class AllRounder : Player, IBatter, IBowler        
     {
         #region enums
         public enum StrikeRate { Bowling = 0, Batting = 1 }
-        public enum PlayBowlerType { Fast, MediumPace, Spin } 
+        //public enum PlayBowlerType { Fast, MediumPace, Spin } 
         #endregion
 
         #region Player
@@ -44,10 +41,7 @@ namespace cricketScoreTrack.Classes
         public int BowlerRunsConceded  { get; set; }
         public int BowlerOversBowled { get; set; }
         #endregion
-
-
-
-
+        
         private double CalculateStrikeRate(StrikeRate strikeRateType)
         {
             switch (strikeRateType)
@@ -61,6 +55,11 @@ namespace cricketScoreTrack.Classes
                 default:
                     throw new Exception("Invalid enum");
             }
+        }
+
+        public override int CalculatePlayerRank()
+        {
+            return 0;
         }
     }
 }

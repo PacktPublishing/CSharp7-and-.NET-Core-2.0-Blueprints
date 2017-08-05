@@ -1,13 +1,9 @@
 ﻿using cricketScoreTrack.BaseClasses;
 using cricketScoreTrack.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace cricketScoreTrack.Classes
 {
-    public class Batsman : Player, IBatsman
+    public class Batsman : Player, IBatter
     {
         #region Player
         public override string FirstName { get; set; }
@@ -23,7 +19,12 @@ namespace cricketScoreTrack.Classes
         public int BatsmanMatch6s { get; set; }
 
         public double BatsmanBattingStrikeRate => (BatsmanRuns * 100) / BatsmanBallsFaced; // (Runs Scored x 100) / Balls Faced
+
+        public override int CalculatePlayerRank()
+        {
+            //throw new NotImplementedException();
+            return 0;
+        }
         #endregion
-                
     }
 }

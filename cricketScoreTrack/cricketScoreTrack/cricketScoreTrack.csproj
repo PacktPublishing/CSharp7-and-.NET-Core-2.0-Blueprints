@@ -246,7 +246,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\IBatsman.cs" />
+    <Compile Include="Interfaces\IBatter.cs" />
     <Compile Include="Interfaces\IBowler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

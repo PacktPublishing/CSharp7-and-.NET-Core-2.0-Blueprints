@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace cricketScoreTrack.BaseClasses
+﻿namespace cricketScoreTrack.BaseClasses
 {
     public abstract class Player
     {
@@ -11,5 +6,7 @@ namespace cricketScoreTrack.BaseClasses
         public abstract string LastName { get; set; }
         public abstract int Age { get; set; }
         public abstract string Bio { get; set; }
+
+        abstract public int CalculatePlayerRank();
     }
 }
