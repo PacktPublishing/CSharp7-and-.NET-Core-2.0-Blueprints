@@ -190,20 +190,20 @@ namespace cricketScoreTrack
         protected void BatsmanSelection(SelectedPlayer selectedPlayer)
         {
             btnSelectPlayer1.CommandArgument = Enum.GetName(typeof(SelectedPlayer), (int)selectedPlayer);
-            GenerateBootstrapDropdown(southAfrica, typeof(Batsman));
+            GeneratePlayerList(southAfrica, typeof(Batsman));
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
         }
 
         protected void btnBowler_Click(object sender, EventArgs e)
         {
             btnSelectPlayer1.CommandArgument = nameof(SelectedPlayer.Bowler);
-            GenerateBootstrapDropdown(southAfrica, typeof(AllRounder));
+            GeneratePlayerList(india, typeof(AllRounder));
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
         }
         #endregion
 
 
-        private void GenerateBootstrapDropdown(List<Player> team, Type type)
+        private void GeneratePlayerList(List<Player> team, Type type)
         {
             List<string> players = new List<string>();
 
@@ -216,7 +216,9 @@ namespace cricketScoreTrack
                            select $"{r.FirstName} {r.LastName}").ToList();
 
             int liVal = 0;
-            ddlPlayersSelect.Items.Clear();
+            if (ddlPlayersSelect.Items.Count > 0)
+                ddlPlayersSelect.Items.Clear();
+
             foreach (string player in players)
             {
                 ListItem li = new ListItem();
@@ -318,7 +320,7 @@ namespace cricketScoreTrack
                 case nameof(SelectedPlayer.Bowler):
                     btnBowler.Text = ddlPlayersSelect.SelectedItem.ToString();
                     break;
-            }            
+            }
         }
 
         protected void ddlPlayersSelect_SelectedIndexChanged(object sender, EventArgs e)

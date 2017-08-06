@@ -7,7 +7,7 @@
         int BowlerBallsBowled { get; set; }
         int BowlerMaidens { get; set; }        
         int BowlerWickets { get; set; }        
-        double BowlerStrikeRate { get; } // Balls Bowled / Wickets Taken        
+        //double BowlerStrikeRate { get; } // Balls Bowled / Wickets Taken        
         double BowlerEconomy { get; } // Runs Conceded / Overs Bowled
         int BowlerRunsConceded { get; set; }
         int BowlerOversBowled { get; set; }

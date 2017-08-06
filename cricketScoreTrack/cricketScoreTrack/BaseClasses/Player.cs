@@ -7,6 +7,6 @@
         public abstract int Age { get; set; }
         public abstract string Bio { get; set; }
 
-        abstract public int CalculatePlayerRank();
+        //abstract public int CalculatePlayerRank();
     }
 }
