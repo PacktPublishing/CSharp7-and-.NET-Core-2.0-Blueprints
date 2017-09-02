@@ -1,0 +1,29 @@
+﻿Dark Sky API — Overview
+https://darksky.net/dev/docs
+
+Dark Sky - Frequently Asked Questions
+https://darksky.net/dev/docs/faq
+
+Dark Sky Forecast Request
+https://darksky.net/dev/docs/forecast
+
+Units of Measurement
+https://docs.microsoft.com/en-us/globalization/locale/units-of-measurement
+
+Climacons
+http://adamwhitcroft.com/climacons/
+
+Dark Sky Core - A .NET Standard Library for using the Dark Sky API.
+https://github.com/amweiss/dark-sky-core
+
+Awesome .NET Core - A collection of awesome .NET core libraries, tools, frameworks and software
+https://github.com/thangchung/awesome-dotnet-core
+
+Public APIs - A collective list of public JSON APIs for use in web development
+https://github.com/toddmotto/public-apis
+
+JSONBIN.io
+https://jsonbin.io
+
+Set up a hosting environment for ASP.NET Core on Linux with Nginx, and deploy to it
+https://docs.microsoft.com/en-us/aspnet/core/publishing/linuxproduction?tabs=aspnetcore2x

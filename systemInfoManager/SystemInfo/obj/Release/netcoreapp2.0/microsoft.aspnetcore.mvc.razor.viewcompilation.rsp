@@ -1,0 +1,14 @@
+C:\[]github\CSharp7-and-.NET-Core-2.0-Blueprints\systemInfoManager\SystemInfo
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=SystemInfo
+--content-root=C:\[]github\CSharp7-and-.NET-Core-2.0-Blueprints\systemInfoManager\SystemInfo
+--file=C:\[]github\CSharp7-and-.NET-Core-2.0-Blueprints\systemInfoManager\SystemInfo\Views\Home\About.cshtml
+--file=C:\[]github\CSharp7-and-.NET-Core-2.0-Blueprints\systemInfoManager\SystemInfo\Views\Home\Contact.cshtml
+--file=C:\[]github\CSharp7-and-.NET-Core-2.0-Blueprints\systemInfoManager\SystemInfo\Views\Home\Index.cshtml
+--file=C:\[]github\CSharp7-and-.NET-Core-2.0-Blueprints\systemInfoManager\SystemInfo\Views\Information\GetInfo.cshtml
+--file=C:\[]github\CSharp7-and-.NET-Core-2.0-Blueprints\systemInfoManager\SystemInfo\Views\Information\Index.cshtml
+--file=C:\[]github\CSharp7-and-.NET-Core-2.0-Blueprints\systemInfoManager\SystemInfo\Views\Shared\Error.cshtml
+--file=C:\[]github\CSharp7-and-.NET-Core-2.0-Blueprints\systemInfoManager\SystemInfo\Views\Shared\_Layout.cshtml
+--file=C:\[]github\CSharp7-and-.NET-Core-2.0-Blueprints\systemInfoManager\SystemInfo\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\[]github\CSharp7-and-.NET-Core-2.0-Blueprints\systemInfoManager\SystemInfo\Views\_ViewImports.cshtml
+--file=C:\[]github\CSharp7-and-.NET-Core-2.0-Blueprints\systemInfoManager\SystemInfo\Views\_ViewStart.cshtml

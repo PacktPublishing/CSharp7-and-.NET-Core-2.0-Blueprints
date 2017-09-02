@@ -1,0 +1,59 @@
+﻿@model SystemInfo.Models.InformationModel
+
+@{
+    ViewData["Title"] = "GetInfo";
+}
+
+<h2>
+    System Information for: @Html.DisplayFor(model => model.InfoTitle)         
+</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Operating System
+        </dt>        
+        <dd>
+            @Html.DisplayFor(model => model.OperatingSystem)            
+        </dd>
+        <dt>
+            Framework Description
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FrameworkDescription)
+        </dd>
+        <dt>
+            Process Architecture
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProcessArchitecture)
+        </dd>        
+        <dt>
+            Public IP
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IPAddressString)
+        </dd>       
+        
+    </dl>
+</div>
+
+<h2>
+    Current Location: @Html.DisplayFor(model => model.CurrentCity)
+</h2>
+<div>
+    <div style="float:left">@Html.Raw(Model.CurrentIcon)</div><div><h3>@Model.CurrentTemperature&deg;@Model.UnitOfMeasure</h3></div>
+</div>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.DailySummary)</h4>
+</div>
+<div>
+    Weather Info: @Html.DisplayFor(model => model.WeatherBy)
+</div>
+@*<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>*@
