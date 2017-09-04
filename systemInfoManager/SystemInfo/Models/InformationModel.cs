@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace SystemInfo.Models
+﻿namespace SystemInfo.Models
 {
     public class InformationModel
     {        
@@ -14,7 +9,6 @@ namespace SystemInfo.Models
         public string ProcessArchitecture { get; set; }
         public string Memory { get; set; }
         public string IPAddressString { get; set; }
-
         public string WeatherBy { get; set; }
         public string CurrentTemperature { get; set; }
         public string CurrentIcon { get; set; }

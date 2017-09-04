@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using System.Runtime.InteropServices;
-using System.Diagnostics;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json;
+﻿using DarkSky.Models;
 using DarkSky.Services;
-using DarkSky.Models;
-using System.IO;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System.Globalization;
+using System.IO;
+using System.Net.Http;
+using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 using static System.Math;
 
 namespace SystemInfo.Controllers
@@ -48,8 +42,7 @@ namespace SystemInfo.Controllers
             model.FrameworkDescription = RuntimeInformation.FrameworkDescription;
             model.OSArchitecture = RuntimeInformation.OSArchitecture.ToString();
             model.ProcessArchitecture = RuntimeInformation.ProcessArchitecture.ToString();
-
-
+            
             string title = string.Empty;
             string OSArchitecture = string.Empty;
 
