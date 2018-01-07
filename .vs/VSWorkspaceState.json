@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\cricketScoreTrack",
+    "\\cricketScoreTrack\\EncapsulationVsAbstraction"
   ],
+  "SelectedNode": "\\cricketScoreTrack\\EncapsulationVsAbstraction",
   "PreviewInSolutionExplorer": false
 }

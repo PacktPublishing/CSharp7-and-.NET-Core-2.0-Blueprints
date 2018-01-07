@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cricketScoreTrack", "cricketScoreTrack\cricketScoreTrack.csproj", "{05C04391-DD08-407F-AAE5-11D8151AA2AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncapsulationVsAbstraction", "EncapsulationVsAbstraction\EncapsulationVsAbstraction.csproj", "{96D9DCDF-152D-4406-8B73-F2F1BA389A3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{05C04391-DD08-407F-AAE5-11D8151AA2AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05C04391-DD08-407F-AAE5-11D8151AA2AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05C04391-DD08-407F-AAE5-11D8151AA2AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D9DCDF-152D-4406-8B73-F2F1BA389A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D9DCDF-152D-4406-8B73-F2F1BA389A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D9DCDF-152D-4406-8B73-F2F1BA389A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D9DCDF-152D-4406-8B73-F2F1BA389A3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1339E8B7-5482-4AD9-A1DC-09D3E8519135}
 	EndGlobalSection
 EndGlobal
