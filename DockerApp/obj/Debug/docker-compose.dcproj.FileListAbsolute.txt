@@ -1,0 +1,1 @@
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\DockerApp\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

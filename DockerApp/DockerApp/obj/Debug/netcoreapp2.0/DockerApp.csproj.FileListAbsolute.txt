@@ -1,0 +1,11 @@
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\DockerApp\DockerApp\bin\Debug\netcoreapp2.0\DockerApp.deps.json
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\DockerApp\DockerApp\bin\Debug\netcoreapp2.0\DockerApp.runtimeconfig.json
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\DockerApp\DockerApp\bin\Debug\netcoreapp2.0\DockerApp.runtimeconfig.dev.json
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\DockerApp\DockerApp\bin\Debug\netcoreapp2.0\DockerApp.dll
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\DockerApp\DockerApp\bin\Debug\netcoreapp2.0\DockerApp.pdb
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\DockerApp\DockerApp\obj\Debug\netcoreapp2.0\DockerApp.csprojResolveAssemblyReference.cache
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\DockerApp\DockerApp\obj\Debug\netcoreapp2.0\DockerApp.csproj.CoreCompileInputs.cache
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\DockerApp\DockerApp\obj\Debug\netcoreapp2.0\DockerApp.AssemblyInfoInputs.cache
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\DockerApp\DockerApp\obj\Debug\netcoreapp2.0\DockerApp.AssemblyInfo.cs
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\DockerApp\DockerApp\obj\Debug\netcoreapp2.0\DockerApp.dll
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\DockerApp\DockerApp\obj\Debug\netcoreapp2.0\DockerApp.pdb
