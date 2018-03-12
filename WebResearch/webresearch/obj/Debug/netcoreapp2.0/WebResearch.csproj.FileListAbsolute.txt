@@ -1,0 +1,11 @@
+C:\Dev\Packt\Chapter6\WebResearch\WebResearch\bin\Debug\netcoreapp2.0\WebResearch.deps.json
+C:\Dev\Packt\Chapter6\WebResearch\WebResearch\bin\Debug\netcoreapp2.0\WebResearch.runtimeconfig.json
+C:\Dev\Packt\Chapter6\WebResearch\WebResearch\bin\Debug\netcoreapp2.0\WebResearch.runtimeconfig.dev.json
+C:\Dev\Packt\Chapter6\WebResearch\WebResearch\bin\Debug\netcoreapp2.0\WebResearch.dll
+C:\Dev\Packt\Chapter6\WebResearch\WebResearch\obj\Debug\netcoreapp2.0\WebResearch.csprojResolveAssemblyReference.cache
+C:\Dev\Packt\Chapter6\WebResearch\WebResearch\obj\Debug\netcoreapp2.0\WebResearch.csproj.CoreCompileInputs.cache
+C:\Dev\Packt\Chapter6\WebResearch\WebResearch\obj\Debug\netcoreapp2.0\WebResearch.AssemblyInfoInputs.cache
+C:\Dev\Packt\Chapter6\WebResearch\WebResearch\obj\Debug\netcoreapp2.0\WebResearch.AssemblyInfo.cs
+C:\Dev\Packt\Chapter6\WebResearch\WebResearch\bin\Debug\netcoreapp2.0\WebResearch.pdb
+C:\Dev\Packt\Chapter6\WebResearch\WebResearch\obj\Debug\netcoreapp2.0\WebResearch.dll
+C:\Dev\Packt\Chapter6\WebResearch\WebResearch\obj\Debug\netcoreapp2.0\WebResearch.pdb
