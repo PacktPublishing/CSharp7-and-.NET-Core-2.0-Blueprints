@@ -1,0 +1,11 @@
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\TwitterClone\CoreTwitter\bin\Debug\netcoreapp2.0\CoreTwitter.deps.json
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\TwitterClone\CoreTwitter\bin\Debug\netcoreapp2.0\CoreTwitter.runtimeconfig.json
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\TwitterClone\CoreTwitter\bin\Debug\netcoreapp2.0\CoreTwitter.runtimeconfig.dev.json
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\TwitterClone\CoreTwitter\bin\Debug\netcoreapp2.0\CoreTwitter.dll
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\TwitterClone\CoreTwitter\obj\Debug\netcoreapp2.0\CoreTwitter.csproj.CoreCompileInputs.cache
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\TwitterClone\CoreTwitter\obj\Debug\netcoreapp2.0\CoreTwitter.AssemblyInfoInputs.cache
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\TwitterClone\CoreTwitter\obj\Debug\netcoreapp2.0\CoreTwitter.AssemblyInfo.cs
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\TwitterClone\CoreTwitter\bin\Debug\netcoreapp2.0\CoreTwitter.pdb
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\TwitterClone\CoreTwitter\obj\Debug\netcoreapp2.0\CoreTwitter.dll
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\TwitterClone\CoreTwitter\obj\Debug\netcoreapp2.0\CoreTwitter.pdb
+C:\z_git\CSharp7-and-.NET-Core-2.0-Blueprints\TwitterClone\CoreTwitter\obj\Debug\netcoreapp2.0\CoreTwitter.csprojResolveAssemblyReference.cache

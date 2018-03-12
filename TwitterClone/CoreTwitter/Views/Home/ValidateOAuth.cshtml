@@ -1,0 +1,23 @@
+﻿@if (@ViewBag.User != null)
+{
+    <h2>OAuth Authentication Succeeded!</h2>
+    <p>Welcome to the CoreTwitter Demo Application <b>@ViewBag.User.Name</b>. You have been successfully authenticated via Twitter.</p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Go to your home feed</h2>
+            <p>
+                See what's new on your home feed.
+            </p>
+            <p>
+                <a class="btn btn-default" href="/Home/GetHomeTimeline">Home &raquo;</a>
+            </p>
+        </div>
+    </div>
+}
+else
+{
+    <h2>OAuth Authentication failed!</h2>
+    <p>An error occurred during authentication. Try <a href="/Home/TwitterAuth">authenticating</a> again.</p>
+}
+
