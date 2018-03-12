@@ -1,0 +1,30 @@
+C:\Dev\Packt\Chapter5\Chapter5\bin\Debug\netcoreapp2.0\Chapter5.deps.json
+C:\Dev\Packt\Chapter5\Chapter5\bin\Debug\netcoreapp2.0\Chapter5.runtimeconfig.json
+C:\Dev\Packt\Chapter5\Chapter5\bin\Debug\netcoreapp2.0\Chapter5.runtimeconfig.dev.json
+C:\Dev\Packt\Chapter5\Chapter5\bin\Debug\netcoreapp2.0\Chapter5.dll
+C:\Dev\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.csprojResolveAssemblyReference.cache
+C:\Dev\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.csproj.CoreCompileInputs.cache
+C:\Dev\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.AssemblyInfoInputs.cache
+C:\Dev\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.AssemblyInfo.cs
+C:\Users\Jas\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\bin\Debug\netcoreapp2.0\Chapter5.deps.json
+C:\Users\Jas\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\bin\Debug\netcoreapp2.0\Chapter5.runtimeconfig.json
+C:\Users\Jas\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\bin\Debug\netcoreapp2.0\Chapter5.runtimeconfig.dev.json
+C:\Users\Jas\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\bin\Debug\netcoreapp2.0\Chapter5.dll
+C:\Users\Jas\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\bin\Debug\netcoreapp2.0\Chapter5.pdb
+C:\Users\Jas\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.csprojResolveAssemblyReference.cache
+C:\Users\Jas\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.csproj.CoreCompileInputs.cache
+C:\Users\Jas\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.AssemblyInfoInputs.cache
+C:\Users\Jas\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.AssemblyInfo.cs
+C:\Users\Jas\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.dll
+C:\Users\Jas\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.pdb
+H:\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\bin\Debug\netcoreapp2.0\Chapter5.deps.json
+H:\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\bin\Debug\netcoreapp2.0\Chapter5.runtimeconfig.json
+H:\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\bin\Debug\netcoreapp2.0\Chapter5.runtimeconfig.dev.json
+H:\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\bin\Debug\netcoreapp2.0\Chapter5.dll
+H:\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\bin\Debug\netcoreapp2.0\Chapter5.pdb
+H:\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.csprojResolveAssemblyReference.cache
+H:\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.csproj.CoreCompileInputs.cache
+H:\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.AssemblyInfoInputs.cache
+H:\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.AssemblyInfo.cs
+H:\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.dll
+H:\Dropbox (Personal)\Packt - .NET Core Blueprints\Packt\Chapter5\Chapter5\obj\Debug\netcoreapp2.0\Chapter5.pdb
