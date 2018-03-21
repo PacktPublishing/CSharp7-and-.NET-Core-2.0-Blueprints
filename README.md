@@ -1,13 +1,15 @@
 # C# 7 and .NET Core 2.0 Blueprints
 
 # Chapter 1 - eBook Manager
-This is a cool little utility app to manage all your ebooks into virtual collections. The new features of C# 7 are illustrated in this chapter.
+This is a cool little utility app to manage all your ebooks into virtual collections. It covers the new features introduced in C# 7,
+which allow developers to write less code and be more productive. We will create an eBook manager application. If you are like me, you have eBooks scattered all over your hard drive and some external drives as well. This application will provide a mechanism to bring all
+these various locations together into a virtual storage space. The application is functional, but it can be further enhanced to suit your needs
 
 # Chapter 2 - Cricket Calculator and Score Tracker
-Love the game? So do we. A Bootstrap ASP.NET site that keeps track of your favorite cricket teams score. The princilpes of Object-Oriented Programming and the first two SOLID principles are discussed in this chapter.
+Love the game? So do we. A Bootstrap ASP.NET site that keeps track of your favorite cricket teams score. The princilpes of Object-Oriented Programming and the first two SOLID principles are discussed in this chapter. Object-oriented programming (OOP) is a crucial element of writing .NET applications. Proper OOP ensures that developers can easily share code between projects. You don't have to rewrite code that has already been written. 
 
 # Chapter 3 - Cross Platform ASP.NET Core MVC Information Dashboard
-Take a closer look at .NET Core. Create a Cross Platform ASP.NET Core MVC Web App that runs on macOS, Linux and Windows and displays basic system information.
+Take a closer look at .NET Core. .NET Core allows us to create applications that will run on Windows, macOS, and Linux. To illustrate this in this chapter, we will be creating a simple Information Dashboard application that displays information about the computer we are running on as well as the weather conditions at the location of that machine.
 
 # Chapter 4 - Task Bug Logging ASP.NET Core MVC App
 Take a look at using MongoDB with ASP.NET Core MVC by creating a task/bug logging application. MongoDB allows developers to be more productive and can easily be added to .NET Core
