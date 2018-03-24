@@ -31,3 +31,5 @@ will take a look at how easy it is to create a basic Twitter clone using ASP.NET
 # Chapter 9 - Using Docker and ASP.NET Core
 Explore Docker, which is all the rage these days, and for very good reason. This chapter illustrates how Docker can benefit developers.
 I will also show you how to create an ASP.NET Core MVC application and run it inside a Docker Container. In the last part of the chapter, we will see how we can use Docker Hub with GitHub to set up automated builds.
+
+Last updated: March 2018
